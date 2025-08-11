@@ -38,10 +38,15 @@ class RoadSegment(models.Model):
         )
         super().save(*args, **kwargs)
 
-
 class Reading(models.Model):
-    segment = models.ForeignKey(RoadSegment, related_name='readings', on_delete=models.CASCADE)
-    # outros campos
+    segment = models.ForeignKey(
+        RoadSegment,
+        related_name='readings',  # Importante para o serializer funcionar
+        on_delete=models.CASCADE
+    )
+    speed = models.FloatField()
+    # outros campos...
+
 
 
 class TrafficReading(models.Model):
