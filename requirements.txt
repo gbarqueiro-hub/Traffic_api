@@ -1,0 +1,10 @@
+Django>=5.0
+djangorestframework
+psycopg2-binary
+drf-spectacular
+django-filter
+djangorestframework-gis
+gunicorn
+black
+whitenoise
+drf_spectacular
