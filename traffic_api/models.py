@@ -38,6 +38,12 @@ class RoadSegment(models.Model):
         )
         super().save(*args, **kwargs)
 
+
+class Reading(models.Model):
+    segment = models.ForeignKey(RoadSegment, related_name='readings', on_delete=models.CASCADE)
+    # outros campos
+
+
 class TrafficReading(models.Model):
     road_segment = models.ForeignKey(RoadSegment, on_delete=models.CASCADE, related_name='readings')
     average_speed = models.FloatField()
@@ -66,3 +72,7 @@ class TrafficReading(models.Model):
     def __str__(self):
         # Usar __str__ do RoadSegment
         return f"{self.road_segment} - {self.average_speed} km/h em {self.timestamp}"
+    
+
+
+    
