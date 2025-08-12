@@ -455,6 +455,43 @@ ALTER SEQUENCE public.traffic_api_passage_id_seq OWNED BY public.traffic_api_pas
 
 
 --
+-- Name: traffic_api_reading; Type: TABLE; Schema: public; Owner: admin1
+--
+
+CREATE TABLE public.traffic_api_reading (
+    id integer NOT NULL,
+    road_segment_id integer NOT NULL,
+    average_speed numeric(5,2) NOT NULL,
+    traffic_intensity character varying(10) NOT NULL,
+    "timestamp" timestamp without time zone NOT NULL
+);
+
+
+ALTER TABLE public.traffic_api_reading OWNER TO admin1;
+
+--
+-- Name: traffic_api_reading_id_seq; Type: SEQUENCE; Schema: public; Owner: admin1
+--
+
+CREATE SEQUENCE public.traffic_api_reading_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.traffic_api_reading_id_seq OWNER TO admin1;
+
+--
+-- Name: traffic_api_reading_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin1
+--
+
+ALTER SEQUENCE public.traffic_api_reading_id_seq OWNED BY public.traffic_api_reading.id;
+
+
+--
 -- Name: traffic_api_roadsegment; Type: TABLE; Schema: public; Owner: admin1
 --
 
@@ -609,6 +646,13 @@ ALTER TABLE ONLY public.traffic_api_car ALTER COLUMN id SET DEFAULT nextval('pub
 --
 
 ALTER TABLE ONLY public.traffic_api_passage ALTER COLUMN id SET DEFAULT nextval('public.traffic_api_passage_id_seq'::regclass);
+
+
+--
+-- Name: traffic_api_reading id; Type: DEFAULT; Schema: public; Owner: admin1
+--
+
+ALTER TABLE ONLY public.traffic_api_reading ALTER COLUMN id SET DEFAULT nextval('public.traffic_api_reading_id_seq'::regclass);
 
 
 --
@@ -925,6 +969,17 @@ COPY public.traffic_api_passage (id, car_id, road_segment_id, sensor_id, "timest
 
 
 --
+-- Data for Name: traffic_api_reading; Type: TABLE DATA; Schema: public; Owner: admin1
+--
+
+COPY public.traffic_api_reading (id, road_segment_id, average_speed, traffic_intensity, "timestamp") FROM stdin;
+1	1	18.00	elevada	2025-08-11 08:00:00
+2	2	40.00	média	2025-08-11 08:15:00
+3	3	60.00	baixa	2025-08-11 08:30:00
+\.
+
+
+--
 -- Data for Name: traffic_api_roadsegment; Type: TABLE DATA; Schema: public; Owner: admin1
 --
 
@@ -1194,6 +1249,13 @@ SELECT pg_catalog.setval('public.traffic_api_passage_id_seq', 10, true);
 
 
 --
+-- Name: traffic_api_reading_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
+--
+
+SELECT pg_catalog.setval('public.traffic_api_reading_id_seq', 3, true);
+
+
+--
 -- Name: traffic_api_roadsegment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
@@ -1386,6 +1448,14 @@ ALTER TABLE ONLY public.traffic_api_car
 
 ALTER TABLE ONLY public.traffic_api_passage
     ADD CONSTRAINT traffic_api_passage_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: traffic_api_reading traffic_api_reading_pkey; Type: CONSTRAINT; Schema: public; Owner: admin1
+--
+
+ALTER TABLE ONLY public.traffic_api_reading
+    ADD CONSTRAINT traffic_api_reading_pkey PRIMARY KEY (id);
 
 
 --
@@ -1627,6 +1697,14 @@ ALTER TABLE ONLY public.traffic_api_passage
 
 ALTER TABLE ONLY public.traffic_api_passage
     ADD CONSTRAINT fk_sensor FOREIGN KEY (sensor_id) REFERENCES public.traffic_api_sensor(id);
+
+
+--
+-- Name: traffic_api_reading traffic_api_reading_road_segment_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: admin1
+--
+
+ALTER TABLE ONLY public.traffic_api_reading
+    ADD CONSTRAINT traffic_api_reading_road_segment_id_fkey FOREIGN KEY (road_segment_id) REFERENCES public.traffic_api_roadsegment(id);
 
 
 --

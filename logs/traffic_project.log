@@ -317,3 +317,154 @@
 [INFO] 2025-08-12 17:01:48,928 middleware Request finished: GET /admin/auth/user/1/change/ - Status: 200 - Duration: 0.03s
 [INFO] 2025-08-12 17:01:48,955 middleware Request started: GET /admin/jsi18n/
 [INFO] 2025-08-12 17:01:48,967 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:22:06,745 middleware Request started: GET /admin/auth/group/
+[INFO] 2025-08-12 17:22:06,923 middleware Request finished: GET /admin/auth/group/ - Status: 200 - Duration: 0.18s
+[INFO] 2025-08-12 17:22:06,956 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:22:06,971 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:22:07,658 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 17:22:07,676 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:22:07,699 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:22:07,710 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:33:13,122 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 17:33:13,143 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:33:13,178 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:33:13,191 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:33:14,489 middleware Request started: GET /admin/traffic_api/passage/
+[INFO] 2025-08-12 17:33:14,519 middleware Request finished: GET /admin/traffic_api/passage/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 17:33:14,545 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:33:14,556 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:33:15,724 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 17:33:15,740 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:33:15,764 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:33:15,773 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:34:56,374 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 17:34:56,391 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:34:56,411 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:34:56,422 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:34:57,135 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 17:34:57,151 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:34:57,176 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:34:57,186 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:34:57,787 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 17:34:57,803 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:34:57,826 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:34:57,837 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:34:58,417 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 17:34:58,433 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:34:58,455 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:34:58,467 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:39:35,768 middleware Request started: GET /admin
+[INFO] 2025-08-12 17:39:35,772 middleware Request finished: GET /admin - Status: 301 - Duration: 0.00s
+[INFO] 2025-08-12 17:39:35,782 middleware Request started: GET /admin/
+[INFO] 2025-08-12 17:39:35,799 middleware Request finished: GET /admin/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:39:38,067 middleware Request started: GET /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:39:38,088 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:39:38,111 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:39:38,121 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:39:57,198 middleware Request started: GET /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:39:57,335 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 404 - Duration: 0.14s
+[WARNING] 2025-08-12 17:39:57,336 log Not Found: /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:40:02,881 middleware Request started: GET /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:40:02,892 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 404 - Duration: 0.01s
+[WARNING] 2025-08-12 17:40:02,892 log Not Found: /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:40:08,837 middleware Request started: GET /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:40:08,848 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 404 - Duration: 0.01s
+[WARNING] 2025-08-12 17:40:08,849 log Not Found: /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:40:16,875 middleware Request started: GET /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:40:17,055 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 200 - Duration: 0.18s
+[INFO] 2025-08-12 17:40:17,079 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:40:17,092 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:42:24,961 middleware Request started: GET /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:42:24,983 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:42:25,002 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:42:25,013 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:43:38,690 middleware Request started: GET /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:43:38,865 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 200 - Duration: 0.17s
+[INFO] 2025-08-12 17:43:38,888 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:43:38,899 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:43:40,670 middleware Request started: GET /admin/traffic_api/sensor/
+[INFO] 2025-08-12 17:43:40,699 middleware Request finished: GET /admin/traffic_api/sensor/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 17:43:40,720 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:43:40,730 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:43:41,803 middleware Request started: GET /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:43:41,824 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:43:41,847 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:43:41,858 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:47:16,206 middleware Request started: GET /admin/traffic_api/trafficreading/
+[ERROR] 2025-08-12 17:47:16,387 log Internal Server Error: /admin/traffic_api/trafficreading/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column traffic_api_trafficreading.traffic_intensity does not exist
+LINE 1: ...d", "traffic_api_trafficreading"."average_speed", "traffic_a...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/admin/options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/admin/sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/contrib/admin/options.py", line 2163, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column traffic_api_trafficreading.traffic_intensity does not exist
+LINE 1: ...d", "traffic_api_trafficreading"."average_speed", "traffic_a...
+                                                             ^
+
+[INFO] 2025-08-12 17:47:16,390 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 500 - Duration: 0.18s
