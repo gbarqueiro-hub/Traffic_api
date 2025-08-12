@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ### 3️⃣ Subir containers
 ```bash
-docker-compose up --build
+docker-compose up 
 ```
 
 ### 4️⃣  Popular base inicial

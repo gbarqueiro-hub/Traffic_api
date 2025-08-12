@@ -637,8 +637,6 @@ ALTER TABLE ONLY public.traffic_speed ALTER COLUMN id SET DEFAULT nextval('publi
 --
 
 COPY public.auth_group (id, name) FROM stdin;
-1	SuperAdmin
-2	Manager
 \.
 
 
@@ -647,60 +645,6 @@ COPY public.auth_group (id, name) FROM stdin;
 --
 
 COPY public.auth_group_permissions (id, group_id, permission_id) FROM stdin;
-1	1	1
-2	1	2
-3	1	3
-4	1	4
-5	1	5
-6	1	6
-7	1	7
-8	1	8
-9	1	9
-10	1	10
-11	1	11
-12	1	12
-13	1	13
-14	1	14
-15	1	15
-16	1	16
-17	1	17
-18	1	18
-19	1	19
-20	1	20
-21	1	21
-22	1	22
-23	1	23
-24	1	24
-25	1	25
-26	1	26
-27	1	27
-28	1	28
-29	1	29
-30	1	30
-31	1	31
-32	1	32
-33	1	33
-34	1	34
-35	1	35
-36	1	36
-37	2	1
-38	2	2
-39	2	33
-40	2	34
-41	2	5
-42	2	6
-43	2	9
-44	2	10
-45	2	13
-46	2	14
-47	2	17
-48	2	18
-49	2	21
-50	2	22
-51	2	25
-52	2	26
-53	2	29
-54	2	30
 \.
 
 
@@ -753,9 +697,7 @@ COPY public.auth_permission (id, name, content_type_id, codename) FROM stdin;
 --
 
 COPY public.auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
-2	!gGLrhMAHAPrzHNyJCqZg45bdPdshkHPakOOqY4kv	\N	f	Anonymous				f	t	2025-08-12 16:58:12.300252+00
-3	pbkdf2_sha256$1000000$8XD9Kvgeehbw7ohQe1JkId$txRLWzQtx0+/trpvl21dH1gvPLrcwrziZ3j1EYdffZs=	2025-08-12 17:01:30.887372+00	t	SuperUser				t	t	2025-08-12 16:59:06+00
-1	pbkdf2_sha256$1000000$eF21lL88anW5j7b5cmGOvs$ZhoeHOkB6+FyJeTZs4ZY54TV/1yjAl0H7J09TZn2S50=	2025-08-12 01:52:09+00	f	manager				t	t	2025-08-11 19:00:26+00
+1	pbkdf2_sha256$1000000$eF21lL88anW5j7b5cmGOvs$ZhoeHOkB6+FyJeTZs4ZY54TV/1yjAl0H7J09TZn2S50=	2025-08-12 01:52:09.223652+00	t	manager				t	t	2025-08-11 19:00:26.700581+00
 \.
 
 
@@ -764,7 +706,6 @@ COPY public.auth_user (id, password, last_login, is_superuser, username, first_n
 --
 
 COPY public.auth_user_groups (id, user_id, group_id) FROM stdin;
-1	1	2
 \.
 
 
@@ -773,42 +714,6 @@ COPY public.auth_user_groups (id, user_id, group_id) FROM stdin;
 --
 
 COPY public.auth_user_user_permissions (id, user_id, permission_id) FROM stdin;
-1	3	1
-2	3	2
-3	3	3
-4	3	4
-5	3	5
-6	3	6
-7	3	7
-8	3	8
-9	3	9
-10	3	10
-11	3	11
-12	3	12
-13	3	13
-14	3	14
-15	3	15
-16	3	16
-17	3	17
-18	3	18
-19	3	19
-20	3	20
-21	3	21
-22	3	22
-23	3	23
-24	3	24
-25	3	25
-26	3	26
-27	3	27
-28	3	28
-29	3	29
-30	3	30
-31	3	31
-32	3	32
-33	3	33
-34	3	34
-35	3	35
-36	3	36
 \.
 
 
@@ -819,15 +724,6 @@ COPY public.auth_user_user_permissions (id, user_id, permission_id) FROM stdin;
 COPY public.django_admin_log (id, action_time, object_id, object_repr, action_flag, change_message, content_type_id, user_id) FROM stdin;
 1	2025-08-11 21:04:09.29095+00	5	Segment 5	1	[{"added": {}}]	8	1
 2	2025-08-11 21:17:48.409016+00	5	Segment 5	3		8	1
-3	2025-08-12 16:58:12.304444+00	2	Anonymous	1	[{"added": {}}]	4	1
-4	2025-08-12 16:59:07.069738+00	3	SuperUser	1	[{"added": {}}]	4	1
-5	2025-08-12 16:59:24.342827+00	3	SuperUser	2	[{"changed": {"fields": ["User permissions"]}}]	4	1
-6	2025-08-12 16:59:33.006168+00	3	SuperUser	2	[{"changed": {"fields": ["Staff status", "Superuser status"]}}]	4	1
-7	2025-08-12 16:59:49.249555+00	1	SuperAdmin	1	[{"added": {}}]	3	1
-8	2025-08-12 17:00:26.965569+00	2	Manager	1	[{"added": {}}]	3	1
-9	2025-08-12 17:01:00.007344+00	1	manager	2	[{"changed": {"fields": ["Groups"]}}]	4	1
-10	2025-08-12 17:01:05.931984+00	3	SuperUser	2	[]	4	1
-11	2025-08-12 17:01:45.532513+00	1	manager	2	[{"changed": {"fields": ["Superuser status"]}}]	4	3
 \.
 
 
@@ -845,7 +741,6 @@ COPY public.django_content_type (id, app_label, model) FROM stdin;
 7	traffic_api	trafficreading
 8	traffic_api	roadsegment
 9	traffic_api	sensor
-10	traffic_api	car
 \.
 
 
@@ -872,6 +767,8 @@ COPY public.django_migrations (id, app, name, applied) FROM stdin;
 16	auth	0011_update_proxy_permissions	2025-08-11 18:13:27.084234+00
 17	auth	0012_alter_user_first_name_max_length	2025-08-11 18:13:27.090018+00
 18	sessions	0001_initial	2025-08-11 18:13:27.101381+00
+19	traffic_api	0001_initial	2025-08-11 18:18:10.97252+00
+20	traffic_api	0002_sensor	2025-08-11 19:09:00.754082+00
 \.
 
 
@@ -881,7 +778,7 @@ COPY public.django_migrations (id, app, name, applied) FROM stdin;
 
 COPY public.django_session (session_key, session_data, expire_date) FROM stdin;
 5hoh77irbr13g2dcj77kiyl4irseh4xk	.eJxVjMsOwiAQRf-FtSG8cVy67zeQAQapGkhKuzL-uzbpQrf3nHNfLOC21rANWsKc2YVJdvrdIqYHtR3kO7Zb56m3dZkj3xV-0MGnnul5Pdy_g4qjfmty56IleOMteLBYkMiaSEYIiEKnZBIU5UrJwrkiQSkZhdEmgsRsQbP3B9qjN4A:1ulXlH:sEKJ8Jgio7KLfS6T9WkAbY0MJNPqXUcSIOUrDHrV6Ec	2025-08-25 19:00:47.607234+00
-etj2bj87zg4gjm3mozkon1n5amkkyt3v	.eJxVjMEOwiAQRP-FsyECwlKP3vsNZGFZqRqalPZk_Hdp0oMe582beYuA21rC1vISJhJXYcTpl0VMz1z3gh5Y77NMc12XKcpdkUfb5DhTft0O9--gYCt9jdZY74aBDZLVZ5egJ7BkwOvIrJQCJAYCl2JKOiI7uDAY9q5TReLzBdclOCk:1ulsNO:cZVsbrxEROep5VLgC1byla8lOGroiR4BQhIbt28N_Yw	2025-08-26 17:01:30.88903+00
+d4sogd6da9t5mx4efk69g69hhl5wqxtd	.eJxVjMsOwiAQRf-FtSG8cVy67zeQAQapGkhKuzL-uzbpQrf3nHNfLOC21rANWsKc2YVJdvrdIqYHtR3kO7Zb56m3dZkj3xV-0MGnnul5Pdy_g4qjfmty56IleOMteLBYkMiaSEYIiEKnZBIU5UrJwrkiQSkZhdEmgsRsQbP3B9qjN4A:1uleBN:hTrfCiMEXHY_rvBHVA1dlalovHSrF2ydXsiR3v9Fjew	2025-08-26 01:52:09.226085+00
 \.
 
 
@@ -902,7 +799,6 @@ COPY public.traffic_api_car (id, license_plate, registered_at) FROM stdin;
 34	DEF5678	2025-08-12 11:13:25.911894+00
 35	GHI9012	2025-08-12 11:13:25.91544+00
 36	JKL3456	2025-08-12 11:13:25.918871+00
-37	NOW0001	2025-08-12 16:15:56.611033+00
 \.
 
 
@@ -916,11 +812,6 @@ COPY public.traffic_api_passage (id, car_id, road_segment_id, sensor_id, "timest
 3	34	2	2	2025-08-12 15:00:00+00
 4	35	3	3	2025-08-12 15:30:00+00
 5	36	1	1	2025-08-12 16:00:00+00
-6	1	1	1	2025-08-12 14:30:00+00
-7	34	2	2	2025-08-12 15:00:00+00
-8	35	3	3	2025-08-12 15:30:00+00
-9	36	1	1	2025-08-12 16:00:00+00
-10	37	1	1	2025-08-12 18:30:00+00
 \.
 
 
@@ -1120,14 +1011,14 @@ COPY topology.layer (topology_id, layer_id, schema_name, table_name, feature_col
 -- Name: auth_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
-SELECT pg_catalog.setval('public.auth_group_id_seq', 2, true);
+SELECT pg_catalog.setval('public.auth_group_id_seq', 1, false);
 
 
 --
 -- Name: auth_group_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
-SELECT pg_catalog.setval('public.auth_group_permissions_id_seq', 54, true);
+SELECT pg_catalog.setval('public.auth_group_permissions_id_seq', 1, false);
 
 
 --
@@ -1141,35 +1032,35 @@ SELECT pg_catalog.setval('public.auth_permission_id_seq', 36, true);
 -- Name: auth_user_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
-SELECT pg_catalog.setval('public.auth_user_groups_id_seq', 1, true);
+SELECT pg_catalog.setval('public.auth_user_groups_id_seq', 1, false);
 
 
 --
 -- Name: auth_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
-SELECT pg_catalog.setval('public.auth_user_id_seq', 3, true);
+SELECT pg_catalog.setval('public.auth_user_id_seq', 1, true);
 
 
 --
 -- Name: auth_user_user_permissions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
-SELECT pg_catalog.setval('public.auth_user_user_permissions_id_seq', 36, true);
+SELECT pg_catalog.setval('public.auth_user_user_permissions_id_seq', 1, false);
 
 
 --
 -- Name: django_admin_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
-SELECT pg_catalog.setval('public.django_admin_log_id_seq', 11, true);
+SELECT pg_catalog.setval('public.django_admin_log_id_seq', 2, true);
 
 
 --
 -- Name: django_content_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
-SELECT pg_catalog.setval('public.django_content_type_id_seq', 10, true);
+SELECT pg_catalog.setval('public.django_content_type_id_seq', 9, true);
 
 
 --
@@ -1183,14 +1074,14 @@ SELECT pg_catalog.setval('public.django_migrations_id_seq', 20, true);
 -- Name: traffic_api_car_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
-SELECT pg_catalog.setval('public.traffic_api_car_id_seq', 37, true);
+SELECT pg_catalog.setval('public.traffic_api_car_id_seq', 36, true);
 
 
 --
 -- Name: traffic_api_passage_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin1
 --
 
-SELECT pg_catalog.setval('public.traffic_api_passage_id_seq', 10, true);
+SELECT pg_catalog.setval('public.traffic_api_passage_id_seq', 5, true);
 
 
 --

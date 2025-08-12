@@ -173,3 +173,147 @@
 [INFO] 2025-08-12 16:27:04,343 middleware Request finished: GET /api/passages/car/ - Status: 200 - Duration: 0.21s
 [INFO] 2025-08-12 16:27:21,940 middleware Request started: GET /api/passages/car/?license_plate=ABC1234
 [INFO] 2025-08-12 16:27:22,164 middleware Request finished: GET /api/passages/car/?license_plate=ABC1234 - Status: 200 - Duration: 0.22s
+[INFO] 2025-08-12 16:56:04,862 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 16:56:04,880 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:56:04,906 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:56:04,917 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:56:07,364 middleware Request started: GET /admin/auth/user/1/change/
+[INFO] 2025-08-12 16:56:07,412 middleware Request finished: GET /admin/auth/user/1/change/ - Status: 200 - Duration: 0.05s
+[INFO] 2025-08-12 16:56:07,435 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:56:07,444 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:57:28,914 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 16:57:28,929 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:57:28,951 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:57:28,962 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:57:50,245 middleware Request started: GET /admin/auth/user/add/
+[INFO] 2025-08-12 16:57:50,269 middleware Request finished: GET /admin/auth/user/add/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:57:50,293 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:57:50,303 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:58:12,289 middleware Request started: POST /admin/auth/user/add/
+[INFO] 2025-08-12 16:58:12,308 middleware Request finished: POST /admin/auth/user/add/ - Status: 302 - Duration: 0.02s
+[INFO] 2025-08-12 16:58:12,312 middleware Request started: GET /admin/auth/user/2/change/
+[INFO] 2025-08-12 16:58:12,347 middleware Request finished: GET /admin/auth/user/2/change/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:58:12,401 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:58:12,413 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:58:16,307 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 16:58:16,323 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:58:16,342 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:58:16,353 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:58:39,166 middleware Request started: GET /admin/auth/user/add/
+[INFO] 2025-08-12 16:58:39,182 middleware Request finished: GET /admin/auth/user/add/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:58:39,208 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:58:39,218 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:59:06,857 middleware Request started: POST /admin/auth/user/add/
+[INFO] 2025-08-12 16:59:07,072 middleware Request finished: POST /admin/auth/user/add/ - Status: 302 - Duration: 0.22s
+[INFO] 2025-08-12 16:59:07,075 middleware Request started: GET /admin/auth/user/3/change/
+[INFO] 2025-08-12 16:59:07,109 middleware Request finished: GET /admin/auth/user/3/change/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:59:07,149 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:59:07,159 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:59:24,317 middleware Request started: POST /admin/auth/user/3/change/
+[INFO] 2025-08-12 16:59:24,345 middleware Request finished: POST /admin/auth/user/3/change/ - Status: 302 - Duration: 0.03s
+[INFO] 2025-08-12 16:59:24,349 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 16:59:24,366 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:59:24,407 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:59:24,417 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:59:26,841 middleware Request started: GET /admin/auth/user/3/change/
+[INFO] 2025-08-12 16:59:26,875 middleware Request finished: GET /admin/auth/user/3/change/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:59:26,896 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:59:26,906 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:59:32,984 middleware Request started: POST /admin/auth/user/3/change/
+[INFO] 2025-08-12 16:59:33,008 middleware Request finished: POST /admin/auth/user/3/change/ - Status: 302 - Duration: 0.02s
+[INFO] 2025-08-12 16:59:33,013 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 16:59:33,034 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:59:33,078 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:59:33,088 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:59:36,136 middleware Request started: GET /admin/auth/group/
+[INFO] 2025-08-12 16:59:36,149 middleware Request finished: GET /admin/auth/group/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:59:36,175 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:59:36,187 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:59:37,995 middleware Request started: GET /admin/auth/group/add/
+[INFO] 2025-08-12 16:59:38,022 middleware Request finished: GET /admin/auth/group/add/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:59:38,054 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:59:38,064 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:59:49,230 middleware Request started: POST /admin/auth/group/add/
+[INFO] 2025-08-12 16:59:49,251 middleware Request finished: POST /admin/auth/group/add/ - Status: 302 - Duration: 0.02s
+[INFO] 2025-08-12 16:59:49,255 middleware Request started: GET /admin/auth/group/
+[INFO] 2025-08-12 16:59:49,271 middleware Request finished: GET /admin/auth/group/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:59:49,295 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:59:49,305 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:59:52,238 middleware Request started: GET /admin/auth/group/add/
+[INFO] 2025-08-12 16:59:52,260 middleware Request finished: GET /admin/auth/group/add/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:59:52,292 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:59:52,302 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:00:26,951 middleware Request started: POST /admin/auth/group/add/
+[INFO] 2025-08-12 17:00:26,968 middleware Request finished: POST /admin/auth/group/add/ - Status: 302 - Duration: 0.02s
+[INFO] 2025-08-12 17:00:26,971 middleware Request started: GET /admin/auth/group/
+[INFO] 2025-08-12 17:00:26,985 middleware Request finished: GET /admin/auth/group/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:00:27,012 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:00:27,021 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:00:31,558 middleware Request started: GET /admin/auth/group/add/
+[INFO] 2025-08-12 17:00:31,580 middleware Request finished: GET /admin/auth/group/add/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:00:31,605 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:00:31,615 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:00:49,192 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 17:00:49,209 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:00:49,228 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:00:49,237 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:00:50,623 middleware Request started: GET /admin/auth/user/1/change/
+[INFO] 2025-08-12 17:00:50,657 middleware Request finished: GET /admin/auth/user/1/change/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 17:00:50,683 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:00:50,692 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:00:59,991 middleware Request started: POST /admin/auth/user/1/change/
+[INFO] 2025-08-12 17:01:00,009 middleware Request finished: POST /admin/auth/user/1/change/ - Status: 302 - Duration: 0.02s
+[INFO] 2025-08-12 17:01:00,013 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 17:01:00,029 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:01:00,071 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:01:00,082 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:01,910 middleware Request started: GET /admin/auth/user/3/change/
+[INFO] 2025-08-12 17:01:01,944 middleware Request finished: GET /admin/auth/user/3/change/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 17:01:01,971 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:01:01,980 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:05,913 middleware Request started: POST /admin/auth/user/3/change/
+[INFO] 2025-08-12 17:01:05,933 middleware Request finished: POST /admin/auth/user/3/change/ - Status: 302 - Duration: 0.02s
+[INFO] 2025-08-12 17:01:05,937 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 17:01:05,954 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:01:05,996 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:01:06,007 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:12,264 middleware Request started: GET /api/docs/
+[INFO] 2025-08-12 17:01:12,274 middleware Request finished: GET /api/docs/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:12,595 middleware Request started: GET /api/schema/
+[INFO] 2025-08-12 17:01:12,646 middleware Request finished: GET /api/schema/ - Status: 200 - Duration: 0.05s
+[INFO] 2025-08-12 17:01:22,354 middleware Request started: POST /admin/logout/
+[INFO] 2025-08-12 17:01:22,366 middleware Request finished: POST /admin/logout/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:23,873 middleware Request started: GET /admin/
+[INFO] 2025-08-12 17:01:23,874 middleware Request finished: GET /admin/ - Status: 302 - Duration: 0.00s
+[INFO] 2025-08-12 17:01:23,879 middleware Request started: GET /admin/login/?next=/admin/
+[INFO] 2025-08-12 17:01:23,905 middleware Request finished: GET /admin/login/?next=/admin/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 17:01:30,669 middleware Request started: POST /admin/login/?next=/admin/
+[INFO] 2025-08-12 17:01:30,890 middleware Request finished: POST /admin/login/?next=/admin/ - Status: 302 - Duration: 0.22s
+[INFO] 2025-08-12 17:01:30,894 middleware Request started: GET /admin/
+[INFO] 2025-08-12 17:01:30,908 middleware Request finished: GET /admin/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:32,924 middleware Request started: GET /admin/auth/group/
+[INFO] 2025-08-12 17:01:32,938 middleware Request finished: GET /admin/auth/group/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:32,961 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:01:32,971 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:34,688 middleware Request started: GET /admin/auth/group/2/change/
+[INFO] 2025-08-12 17:01:34,712 middleware Request finished: GET /admin/auth/group/2/change/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:01:34,737 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:01:34,747 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:38,830 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 17:01:38,848 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:01:38,873 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:01:38,883 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:40,298 middleware Request started: GET /admin/auth/user/1/change/
+[INFO] 2025-08-12 17:01:40,331 middleware Request finished: GET /admin/auth/user/1/change/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 17:01:40,358 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:01:40,371 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:45,516 middleware Request started: POST /admin/auth/user/1/change/
+[INFO] 2025-08-12 17:01:45,534 middleware Request finished: POST /admin/auth/user/1/change/ - Status: 302 - Duration: 0.02s
+[INFO] 2025-08-12 17:01:45,538 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 17:01:45,554 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:01:45,596 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:01:45,606 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:01:48,895 middleware Request started: GET /admin/auth/user/1/change/
+[INFO] 2025-08-12 17:01:48,928 middleware Request finished: GET /admin/auth/user/1/change/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 17:01:48,955 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:01:48,967 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
