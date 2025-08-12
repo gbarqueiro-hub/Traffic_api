@@ -24,7 +24,7 @@ class Command(BaseCommand):
             '-h', host,
             '-U', user,
             '-d', database,
-            '-f', caminho_dumpa
+            '-f', caminho_dump
         ]
 
         self.stdout.write('Importando dump SQL...')
