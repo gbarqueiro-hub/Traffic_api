@@ -60,6 +60,7 @@ docker-compose up
 
 ## 🔑 Credenciais Padrão (dev)
 - **manager / ubi12345**
+- **SuperUser / ubi12345**
 - **admin1 / 1234** (usuário PostgreSQL)
 
 ---
