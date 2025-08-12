@@ -45,12 +45,7 @@ pip install -r requirements.txt
 docker-compose up --build
 ```
 
-### 4️⃣ Criar superusuário
-```bash
-docker-compose exec web python manage.py createsuperuser
-```
-
-### 5️⃣ Popular base inicial
+### 4️⃣  Popular base inicial
 ```bash
 docker-compose exec web python manage.py importstartdb
 ```
