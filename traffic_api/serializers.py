@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from rest_framework_gis.serializers import GeoFeatureModelSerializer
 from drf_spectacular.utils import extend_schema_field, OpenApiTypes
-from .models import RoadSegment, TrafficReading
+from .models import RoadSegment, TrafficReading , Sensor
 
 
 
@@ -29,6 +29,14 @@ class RoadSegmentSerializer(GeoFeatureModelSerializer):
             return "Média"
         else:
             return "Elevada"
+
+
+
+class SensorSerializer(GeoFeatureModelSerializer):
+    class Meta:
+        model = Sensor
+        geo_field = "location"  # campo geográfico PointField
+        fields = ['id', 'name', 'uuid', 'location']
 
 class TrafficReadingSerializer(serializers.ModelSerializer):
     intensity = serializers.SerializerMethodField()

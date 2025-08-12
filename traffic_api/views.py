@@ -2,9 +2,10 @@ from rest_framework import viewsets, permissions, exceptions, filters as drf_fil
 from django_filters.rest_framework import DjangoFilterBackend
 from django.db.models import Count
 from .models import RoadSegment, TrafficReading
-from .serializers import RoadSegmentSerializer, TrafficReadingSerializer
+from .serializers import RoadSegmentSerializer, TrafficReadingSerializer , Sensor , SensorSerializer  
 from .permissions import CustomPermission
 from .filters import RoadSegmentFilter
+
 
 from rest_framework import generics
 
@@ -35,6 +36,22 @@ class RoadSegmentViewSet(viewsets.ModelViewSet):
             raise exceptions.PermissionDenied("Sem permissão para deletar.")
 
 
+
+class SensorViewSet(viewsets.ModelViewSet):
+    queryset = Sensor.objects.all()
+    serializer_class = SensorSerializer
+    permission_classes = [CustomPermission]
+
+    def perform_destroy(self, instance):
+        user = self.request.user
+        if user.is_superuser:
+            instance.delete()
+        elif user.groups.filter(name='manager').exists():
+            raise exceptions.PermissionDenied("Managers não têm permissão para deletar sensores.")
+        else:
+            raise exceptions.PermissionDenied("Sem permissão para deletar sensores.")
+
+
 class TrafficReadingViewSet(viewsets.ModelViewSet):
     """
     CRUD para leituras de velocidade média.
@@ -50,17 +67,6 @@ class TrafficReadingViewSet(viewsets.ModelViewSet):
     ordering_fields = ['timestamp', 'average_speed']
     search_fields = []
 
-    def get_permissions(self):
-        if self.request.method in permissions.SAFE_METHODS:
-            return [permissions.AllowAny()]
-        elif self.request.user.is_superuser:
-            return [CustomPermission()]
-        elif self.request.user.groups.filter(name='manager').exists():
-            if self.request.method == 'DELETE':
-                raise exceptions.PermissionDenied("Managers não têm permissão para deletar.")
-            return [CustomPermission()]
-        else:
-            raise exceptions.PermissionDenied("Sem permissão para esta ação.")
 
     def perform_destroy(self, instance):
         user = self.request.user

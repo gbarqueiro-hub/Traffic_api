@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.contrib.gis.geos import LineString
 from django.contrib.gis.db import models as gis_models
 from django.contrib.gis.db import models  # usar GIS para campos geográficos
+from django.contrib import admin
 
 
 class Sensor(models.Model):
@@ -61,7 +62,7 @@ class RoadSegment(models.Model):
 class Reading(models.Model):
     segment = models.ForeignKey(
         RoadSegment,
-        related_name='readings',  # Importante para o serializer funcionar
+        related_name='sensor_readings',  # nome diferente aqui
         on_delete=models.CASCADE
     )
     speed = models.FloatField()
