@@ -30,8 +30,8 @@ API REST para monitoramento de tráfego rodoviário, desenvolvida com **Django R
 
 ### 1️⃣ Clonar o repositório
 ```bash
-cd /c
-git clone https://github.com/SEU_USUARIO/Traffic_api.git
+cd c:/
+git clone https://github.com/gbarqueiro-hub/Traffic_api.git
 cd Traffic_api
 ```
 

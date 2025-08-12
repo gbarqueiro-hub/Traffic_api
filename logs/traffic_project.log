@@ -468,3 +468,31 @@ LINE 1: ...d", "traffic_api_trafficreading"."average_speed", "traffic_a...
                                                              ^
 
 [INFO] 2025-08-12 17:47:16,390 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 500 - Duration: 0.18s
+[INFO] 2025-08-12 17:47:26,001 middleware Request started: GET /admin/traffic_api/trafficreading/
+[INFO] 2025-08-12 17:47:26,185 middleware Request finished: GET /admin/traffic_api/trafficreading/ - Status: 200 - Duration: 0.18s
+[INFO] 2025-08-12 17:47:26,211 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:47:26,222 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:47:28,057 middleware Request started: GET /admin/auth/group/
+[INFO] 2025-08-12 17:47:28,079 middleware Request finished: GET /admin/auth/group/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:47:28,105 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:47:28,116 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:47:29,157 middleware Request started: GET /admin/auth/user/
+[INFO] 2025-08-12 17:47:29,175 middleware Request finished: GET /admin/auth/user/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:47:29,197 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:47:29,208 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:47:30,878 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 17:47:30,895 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:47:30,920 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:47:30,931 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:47:31,923 middleware Request started: GET /admin/traffic_api/passage/
+[INFO] 2025-08-12 17:47:31,953 middleware Request finished: GET /admin/traffic_api/passage/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 17:47:31,977 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:47:31,988 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:47:32,359 middleware Request started: GET /admin/traffic_api/roadsegment/
+[INFO] 2025-08-12 17:47:32,406 middleware Request finished: GET /admin/traffic_api/roadsegment/ - Status: 200 - Duration: 0.05s
+[INFO] 2025-08-12 17:47:32,426 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:47:32,438 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 17:47:33,521 middleware Request started: GET /admin/traffic_api/sensor/
+[INFO] 2025-08-12 17:47:33,544 middleware Request finished: GET /admin/traffic_api/sensor/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 17:47:33,570 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 17:47:33,581 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
