@@ -9,7 +9,7 @@ class Sensor(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
     uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
-    location = models.PointField(null=True, blank=True)
+    location = gis_models.PointField(null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -21,22 +21,42 @@ class RoadSegment(models.Model):
     lat_start = models.FloatField(null=True, blank=True)
     long_end = models.FloatField(null=True, blank=True)
     lat_end = models.FloatField(null=True, blank=True)
-    length = models.FloatField()
-    speed = models.FloatField()
+    length = models.FloatField(null=True, blank=True)
+    speed = models.FloatField(null=True, blank=True)
     geom = gis_models.LineStringField(srid=4326, null=True, blank=True)
-
 
     def __str__(self):
         return f"Segment {self.id}"
 
     def save(self, *args, **kwargs):
-        # Atualiza o campo geom sempre que salvar o modelo
-        self.geom = LineString(
-            (self.long_start, self.lat_start),
-            (self.long_end, self.lat_end),
-            srid=4326
-        )
+        # Corrigir geom: precisa ser uma lista/tupla de pontos
+        if self.long_start is not None and self.lat_start is not None and \
+           self.long_end is not None and self.lat_end is not None:
+            self.geom = LineString([
+                (self.long_start, self.lat_start),
+                (self.long_end, self.lat_end)
+            ], srid=4326)
         super().save(*args, **kwargs)
+
+    @property
+    def total_readings(self):
+        return self.readings.count()
+
+    @property
+    def last_reading(self):
+        return self.readings.order_by('-timestamp').first()
+
+    @property
+    def last_average_speed(self):
+        last = self.last_reading
+        return last.average_speed if last else None
+
+    @property
+    def last_intensity(self):
+        last = self.last_reading
+        return last.intensity if last else None
+
+
 
 class Reading(models.Model):
     segment = models.ForeignKey(
@@ -50,7 +70,7 @@ class Reading(models.Model):
 
 
 class TrafficReading(models.Model):
-    road_segment = models.ForeignKey(RoadSegment, on_delete=models.CASCADE, related_name='readings')
+    road_segment = gis_models.ForeignKey(RoadSegment, on_delete=models.CASCADE, related_name='readings')
     average_speed = models.FloatField()
     timestamp = models.DateTimeField(default=timezone.now)
 
@@ -66,7 +86,6 @@ class TrafficReading(models.Model):
 
     @property
     def intensity(self):
-        # Calcular intensidade de tráfego com base na velocidade média (regra do enunciado)
         if self.average_speed <= 20:
             return self.Intensity.HIGH
         elif 20 < self.average_speed <= 50:
@@ -75,9 +94,7 @@ class TrafficReading(models.Model):
             return self.Intensity.LOW
 
     def __str__(self):
-        # Usar __str__ do RoadSegment
         return f"{self.road_segment} - {self.average_speed} km/h em {self.timestamp}"
-    
 
 
     
