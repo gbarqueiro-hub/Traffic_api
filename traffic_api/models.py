@@ -16,6 +16,16 @@ class Sensor(models.Model):
         return self.name
     
 
+class Car(models.Model):
+    license_plate = models.CharField(max_length=20, unique=True)
+    registered_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.license_plate
+
+
+
+
 class RoadSegment(models.Model):
     id = models.AutoField(primary_key=True)
     long_start = models.FloatField(null=True, blank=True)
@@ -57,6 +67,15 @@ class RoadSegment(models.Model):
         last = self.last_reading
         return last.intensity if last else None
 
+
+class Passage(models.Model):
+    car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name='passages')
+    road_segment = models.ForeignKey(RoadSegment, on_delete=models.CASCADE, related_name='passages')
+    sensor = models.ForeignKey(Sensor, on_delete=models.CASCADE, related_name='passages')
+    timestamp = models.DateTimeField()
+
+    def __str__(self):
+        return f"{self.car} on {self.road_segment} at {self.timestamp}"
 
 
 class Reading(models.Model):

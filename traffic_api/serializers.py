@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from rest_framework_gis.serializers import GeoFeatureModelSerializer
 from drf_spectacular.utils import extend_schema_field, OpenApiTypes
-from .models import RoadSegment, TrafficReading , Sensor
+from .models import Passage, Car, RoadSegment, TrafficReading , Sensor
 
 
 
@@ -58,3 +58,21 @@ class TrafficReadingSerializer(serializers.ModelSerializer):
     class Meta:
         model = TrafficReading
         fields = ['id', 'road_segment', 'average_speed', 'timestamp', 'intensity', 'description']
+
+
+
+
+
+class CarSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Car
+        fields = ['id', 'license_plate', 'registered_at']
+
+class PassageSerializer(serializers.ModelSerializer):
+    car = CarSerializer(read_only=True)
+    sensor = serializers.StringRelatedField()
+    road_segment = serializers.StringRelatedField()
+
+    class Meta:
+        model = Passage
+        fields = ['id', 'car', 'sensor', 'road_segment', 'timestamp']
