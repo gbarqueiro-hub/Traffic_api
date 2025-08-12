@@ -20,5 +20,6 @@ urlpatterns = [
     # Endpoints de bulk upload e consultas específicas
     path('passages/bulk_upload/', SensorBulkPassageUploadView.as_view(), name='bulk_upload'),
     path('api/passages/car/', CarPassagesLast24hView.as_view(), name='car_passages_last24h'),
+    
 
 ]

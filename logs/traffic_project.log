@@ -1,0 +1,171 @@
+[INFO] 2025-08-12 15:59:46,818 middleware Request started: GET /admin/traffic_api/car/36/change/
+[INFO] 2025-08-12 15:59:47,004 middleware Request finished: GET /admin/traffic_api/car/36/change/ - Status: 200 - Duration: 0.19s
+[INFO] 2025-08-12 15:59:47,041 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 15:59:47,055 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 15:59:50,100 middleware Request started: GET /admin/traffic_api/passage/
+[INFO] 2025-08-12 15:59:50,134 middleware Request finished: GET /admin/traffic_api/passage/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 15:59:50,157 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 15:59:50,168 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 15:59:52,052 middleware Request started: GET /admin/traffic_api/roadsegment/
+[INFO] 2025-08-12 15:59:52,101 middleware Request finished: GET /admin/traffic_api/roadsegment/ - Status: 200 - Duration: 0.05s
+[INFO] 2025-08-12 15:59:52,121 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 15:59:52,132 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 15:59:54,340 middleware Request started: GET /admin/traffic_api/roadsegment/87/change/
+[INFO] 2025-08-12 15:59:54,379 middleware Request finished: GET /admin/traffic_api/roadsegment/87/change/ - Status: 200 - Duration: 0.04s
+[INFO] 2025-08-12 15:59:54,417 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 15:59:54,427 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:00:08,283 middleware Request started: GET /admin/traffic_api/passage/
+[INFO] 2025-08-12 16:00:08,310 middleware Request finished: GET /admin/traffic_api/passage/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:00:08,332 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:00:08,343 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:00:09,161 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 16:00:09,180 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:00:09,212 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:00:09,226 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:00:38,263 middleware Request started: GET /api/traffic/
+[INFO] 2025-08-12 16:00:38,267 middleware Request finished: GET /api/traffic/ - Status: 404 - Duration: 0.00s
+[WARNING] 2025-08-12 16:00:38,268 log Not Found: /api/traffic/
+[INFO] 2025-08-12 16:01:06,257 middleware Request started: GET /api/traffic/
+[INFO] 2025-08-12 16:01:06,260 middleware Request finished: GET /api/traffic/ - Status: 404 - Duration: 0.00s
+[WARNING] 2025-08-12 16:01:06,261 log Not Found: /api/traffic/
+[INFO] 2025-08-12 16:01:37,097 middleware Request started: GET /api/docs/
+[INFO] 2025-08-12 16:01:37,228 middleware Request finished: GET /api/docs/ - Status: 200 - Duration: 0.13s
+[INFO] 2025-08-12 16:04:16,099 middleware Request started: GET /api/roadsegments/
+[INFO] 2025-08-12 16:04:16,140 middleware Request finished: GET /api/roadsegments/ - Status: 200 - Duration: 0.04s
+[INFO] 2025-08-12 16:04:30,957 middleware Request started: GET /api/roadsegments/
+[INFO] 2025-08-12 16:04:30,973 middleware Request finished: GET /api/roadsegments/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:06:43,096 middleware Request started: GET /api/roadsegments/
+[INFO] 2025-08-12 16:06:43,113 middleware Request finished: GET /api/roadsegments/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:06:43,133 middleware Request started: GET /api/trafficreadings/
+[INFO] 2025-08-12 16:06:43,141 middleware Request finished: GET /api/trafficreadings/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:06:43,158 middleware Request started: GET /api/sensors/
+[INFO] 2025-08-12 16:06:43,173 middleware Request finished: GET /api/sensors/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:06:43,192 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:06:43,193 middleware Request finished: GET /api/passages/car/ - Status: 403 - Duration: 0.00s
+[WARNING] 2025-08-12 16:06:43,193 log Forbidden: /api/passages/car/
+[INFO] 2025-08-12 16:06:43,210 middleware Request started: GET /api/docs/
+[INFO] 2025-08-12 16:06:43,211 middleware Request finished: GET /api/docs/ - Status: 200 - Duration: 0.00s
+[INFO] 2025-08-12 16:06:43,228 middleware Request started: GET /api/schema/
+[INFO] 2025-08-12 16:06:43,282 middleware Request finished: GET /api/schema/ - Status: 200 - Duration: 0.05s
+[INFO] 2025-08-12 16:06:43,307 middleware Request started: GET /api/redoc/
+[INFO] 2025-08-12 16:06:43,309 middleware Request finished: GET /api/redoc/ - Status: 200 - Duration: 0.00s
+[INFO] 2025-08-12 16:06:55,036 middleware Request started: GET /api/roadsegments/
+[INFO] 2025-08-12 16:06:55,052 middleware Request finished: GET /api/roadsegments/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:06:55,073 middleware Request started: GET /api/trafficreadings/
+[INFO] 2025-08-12 16:06:55,082 middleware Request finished: GET /api/trafficreadings/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:06:55,100 middleware Request started: GET /api/sensors/
+[INFO] 2025-08-12 16:06:55,113 middleware Request finished: GET /api/sensors/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:06:55,131 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:06:55,132 middleware Request finished: GET /api/passages/car/ - Status: 403 - Duration: 0.00s
+[WARNING] 2025-08-12 16:06:55,132 log Forbidden: /api/passages/car/
+[INFO] 2025-08-12 16:06:55,148 middleware Request started: GET /api/docs/
+[INFO] 2025-08-12 16:06:55,150 middleware Request finished: GET /api/docs/ - Status: 200 - Duration: 0.00s
+[INFO] 2025-08-12 16:06:55,169 middleware Request started: GET /api/schema/
+[INFO] 2025-08-12 16:06:55,202 middleware Request finished: GET /api/schema/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:06:55,228 middleware Request started: GET /api/redoc/
+[INFO] 2025-08-12 16:06:55,229 middleware Request finished: GET /api/redoc/ - Status: 200 - Duration: 0.00s
+[INFO] 2025-08-12 16:09:31,901 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:09:31,902 middleware Request finished: GET /api/passages/car/ - Status: 403 - Duration: 0.00s
+[WARNING] 2025-08-12 16:09:31,902 log Forbidden: /api/passages/car/
+[INFO] 2025-08-12 16:09:36,558 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:09:36,559 middleware Request finished: GET /api/passages/car/ - Status: 403 - Duration: 0.00s
+[WARNING] 2025-08-12 16:09:36,560 log Forbidden: /api/passages/car/
+[INFO] 2025-08-12 16:09:55,293 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:09:55,294 middleware Request finished: GET /api/passages/car/ - Status: 403 - Duration: 0.00s
+[WARNING] 2025-08-12 16:09:55,294 log Forbidden: /api/passages/car/
+[INFO] 2025-08-12 16:11:14,514 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:11:14,726 middleware Request finished: GET /api/passages/car/ - Status: 403 - Duration: 0.21s
+[WARNING] 2025-08-12 16:11:14,727 log Forbidden: /api/passages/car/
+[INFO] 2025-08-12 16:11:53,615 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:11:53,826 middleware Request finished: GET /api/passages/car/ - Status: 200 - Duration: 0.21s
+[INFO] 2025-08-12 16:12:24,062 middleware Request started: POST /passages/bulk_upload/
+[INFO] 2025-08-12 16:12:24,274 middleware Request finished: POST /passages/bulk_upload/ - Status: 403 - Duration: 0.21s
+[WARNING] 2025-08-12 16:12:24,275 log Forbidden: /passages/bulk_upload/
+[INFO] 2025-08-12 16:13:37,496 middleware Request started: POST /passages/bulk_upload/
+[INFO] 2025-08-12 16:13:37,522 middleware Request finished: POST /passages/bulk_upload/ - Status: 201 - Duration: 0.03s
+[INFO] 2025-08-12 16:14:37,925 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:14:38,134 middleware Request finished: GET /api/passages/car/ - Status: 200 - Duration: 0.21s
+[INFO] 2025-08-12 16:15:56,595 middleware Request started: POST /passages/bulk_upload/
+[INFO] 2025-08-12 16:15:56,613 middleware Request finished: POST /passages/bulk_upload/ - Status: 201 - Duration: 0.02s
+[INFO] 2025-08-12 16:16:04,211 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:16:04,421 middleware Request finished: GET /api/passages/car/ - Status: 200 - Duration: 0.21s
+[INFO] 2025-08-12 16:18:58,709 middleware Request started: GET /admin/traffic_api/roadsegment/
+[INFO] 2025-08-12 16:18:58,770 middleware Request finished: GET /admin/traffic_api/roadsegment/ - Status: 200 - Duration: 0.06s
+[INFO] 2025-08-12 16:18:58,795 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:18:58,805 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:18:59,455 middleware Request started: GET /admin/traffic_api/passage/
+[INFO] 2025-08-12 16:18:59,496 middleware Request finished: GET /admin/traffic_api/passage/ - Status: 200 - Duration: 0.04s
+[INFO] 2025-08-12 16:18:59,531 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:18:59,544 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:19:01,656 middleware Request started: GET /admin/traffic_api/passage/
+[INFO] 2025-08-12 16:19:01,683 middleware Request finished: GET /admin/traffic_api/passage/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:19:01,703 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:19:01,713 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:19:06,485 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 16:19:06,502 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:19:06,525 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:19:06,537 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:19:08,309 middleware Request started: GET /admin/traffic_api/roadsegment/
+[INFO] 2025-08-12 16:19:08,356 middleware Request finished: GET /admin/traffic_api/roadsegment/ - Status: 200 - Duration: 0.05s
+[INFO] 2025-08-12 16:19:08,381 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:19:08,390 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:19:09,995 middleware Request started: GET /admin/traffic_api/sensor/
+[INFO] 2025-08-12 16:19:10,018 middleware Request finished: GET /admin/traffic_api/sensor/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:19:10,042 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:19:10,053 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:19:11,338 middleware Request started: GET /admin/traffic_api/passage/
+[INFO] 2025-08-12 16:19:11,366 middleware Request finished: GET /admin/traffic_api/passage/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:19:11,391 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:19:11,402 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:20:38,768 middleware Request started: GET /api/passages/
+[INFO] 2025-08-12 16:20:38,892 middleware Request finished: GET /api/passages/ - Status: 404 - Duration: 0.12s
+[WARNING] 2025-08-12 16:20:38,892 log Not Found: /api/passages/
+[INFO] 2025-08-12 16:20:49,871 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:20:50,085 middleware Request finished: GET /api/passages/car/ - Status: 200 - Duration: 0.21s
+[INFO] 2025-08-12 16:21:10,052 middleware Request started: GET /api/passage/
+[INFO] 2025-08-12 16:21:10,056 middleware Request finished: GET /api/passage/ - Status: 404 - Duration: 0.00s
+[WARNING] 2025-08-12 16:21:10,056 log Not Found: /api/passage/
+[INFO] 2025-08-12 16:22:28,182 middleware Request started: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-12+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-08-13+00%3A00%3A00%2B00%3A00
+[INFO] 2025-08-12 16:22:28,250 middleware Request finished: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-12+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-08-13+00%3A00%3A00%2B00%3A00 - Status: 200 - Duration: 0.07s
+[INFO] 2025-08-12 16:22:28,278 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:22:28,289 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:22:29,638 middleware Request started: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-05+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-08-13+00%3A00%3A00%2B00%3A00
+[INFO] 2025-08-12 16:22:29,667 middleware Request finished: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-05+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-08-13+00%3A00%3A00%2B00%3A00 - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:22:29,695 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:22:29,705 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:22:30,947 middleware Request started: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-01+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-09-01+00%3A00%3A00%2B00%3A00
+[INFO] 2025-08-12 16:22:30,979 middleware Request finished: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-01+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-09-01+00%3A00%3A00%2B00%3A00 - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:22:31,006 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:22:31,017 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:22:31,702 middleware Request started: GET /admin/traffic_api/passage/?timestamp__gte=2025-01-01+00%3A00%3A00%2B00%3A00&timestamp__lt=2026-01-01+00%3A00%3A00%2B00%3A00
+[INFO] 2025-08-12 16:22:31,734 middleware Request finished: GET /admin/traffic_api/passage/?timestamp__gte=2025-01-01+00%3A00%3A00%2B00%3A00&timestamp__lt=2026-01-01+00%3A00%3A00%2B00%3A00 - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:22:31,761 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:22:31,774 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:22:36,105 middleware Request started: GET /admin/traffic_api/passage/
+[INFO] 2025-08-12 16:22:36,134 middleware Request finished: GET /admin/traffic_api/passage/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:22:36,158 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:22:36,169 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:22:37,809 middleware Request started: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-12+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-08-13+00%3A00%3A00%2B00%3A00
+[INFO] 2025-08-12 16:22:37,838 middleware Request finished: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-12+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-08-13+00%3A00%3A00%2B00%3A00 - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:22:37,867 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:22:37,878 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:22:39,694 middleware Request started: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-05+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-08-13+00%3A00%3A00%2B00%3A00
+[INFO] 2025-08-12 16:22:39,725 middleware Request finished: GET /admin/traffic_api/passage/?timestamp__gte=2025-08-05+00%3A00%3A00%2B00%3A00&timestamp__lt=2025-08-13+00%3A00%3A00%2B00%3A00 - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:22:39,745 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:22:39,756 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:22:40,986 middleware Request started: GET /admin/traffic_api/car/
+[INFO] 2025-08-12 16:22:41,003 middleware Request finished: GET /admin/traffic_api/car/ - Status: 200 - Duration: 0.02s
+[INFO] 2025-08-12 16:22:41,030 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:22:41,043 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:23:59,165 middleware Request started: GET /admin/traffic_api/passage/
+[INFO] 2025-08-12 16:23:59,196 middleware Request finished: GET /admin/traffic_api/passage/ - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:23:59,221 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:23:59,231 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:24:02,967 middleware Request started: GET /admin/traffic_api/passage/?road_segment__id__exact=2
+[INFO] 2025-08-12 16:24:02,993 middleware Request finished: GET /admin/traffic_api/passage/?road_segment__id__exact=2 - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:24:03,019 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:24:03,030 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:24:04,182 middleware Request started: GET /admin/traffic_api/passage/?road_segment__id__exact=1
+[INFO] 2025-08-12 16:24:04,209 middleware Request finished: GET /admin/traffic_api/passage/?road_segment__id__exact=1 - Status: 200 - Duration: 0.03s
+[INFO] 2025-08-12 16:24:04,231 middleware Request started: GET /admin/jsi18n/
+[INFO] 2025-08-12 16:24:04,241 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s

@@ -2,9 +2,13 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from dotenv import load_dotenv
 
 def main():
+    load_dotenv()
+    print("DB_HOST =", os.getenv("DB_HOST"))  # ou o nome da variável que você usa para o host do banco
+   
+
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'traffic_project.settings')
     try:

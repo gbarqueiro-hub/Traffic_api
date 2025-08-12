@@ -1,3 +1,4 @@
+import logging
 from rest_framework import serializers
 from rest_framework_gis.serializers import GeoFeatureModelSerializer
 from drf_spectacular.utils import extend_schema_field, OpenApiTypes
@@ -30,7 +31,16 @@ class RoadSegmentSerializer(GeoFeatureModelSerializer):
         else:
             return "Elevada"
 
+logger = logging.getLogger('traffic_api')
 
+class TrafficSerializer(serializers.Serializer):
+    speed = serializers.IntegerField()
+
+    def validate_speed(self, value):
+        if value < 0:
+            logger.warning(f'Valor de speed inválido: {value}')
+            raise serializers.ValidationError("Velocidade não pode ser negativa.")
+        return value
 
 class SensorSerializer(GeoFeatureModelSerializer):
     class Meta:

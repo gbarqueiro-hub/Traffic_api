@@ -1,3 +1,4 @@
+import logging
 from rest_framework import viewsets, permissions,  generics, exceptions, filters as drf_filters
 from django_filters.rest_framework import DjangoFilterBackend
 from django.db.models import Count
@@ -13,7 +14,6 @@ from django.utils import timezone
 from rest_framework.permissions import BasePermission
 from django.shortcuts import get_object_or_404
 from .serializers import PassageSerializer 
-
 from rest_framework import generics
 
 RoadSegment.objects.annotate(readings_count=Count('readings'))
@@ -58,6 +58,21 @@ class SensorViewSet(viewsets.ModelViewSet):
         else:
             raise exceptions.PermissionDenied("Sem permissão para deletar sensores.")
 
+
+
+logger = logging.getLogger('traffic_api')
+
+class TrafficDataView(APIView):
+    def get(self, request, *args, **kwargs):
+        logger.info(f'Requisição GET recebida com params: {request.query_params}')
+        try:
+            # lógica da view
+            data = {...}
+            logger.debug(f'Dados processados: {data}')
+            return Response(data)
+        except Exception as e:
+            logger.error(f'Erro ao processar GET: {str(e)}', exc_info=True)
+            return Response({'error': 'Erro interno'}, status=500)
 
 class TrafficReadingViewSet(viewsets.ModelViewSet):
     """
