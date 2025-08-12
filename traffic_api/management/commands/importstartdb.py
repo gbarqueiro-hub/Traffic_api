@@ -14,21 +14,29 @@ class Command(BaseCommand):
         self.stdout.write(f'Usando dump SQL em: {caminho_dump}')
 
         # Configurações do banco - ajuste conforme seu ambiente!
+        host = 'db'          # Nome do serviço PostgreSQL no docker-compose
         user = 'admin1'
-        database = '1234'
+        database = 'traffic'
+        password = '1234'  # <<< coloque a senha do usuário aqui
 
         comando = [
             'psql',
+            '-h', host,
             '-U', user,
             '-d', database,
-            '-f', caminho_dump
+            '-f', caminho_dumpa
         ]
 
         self.stdout.write('Importando dump SQL...')
 
         try:
-            # Usa subprocess para melhor controle
-            resultado = subprocess.run(comando, check=True, text=True, capture_output=True)
+            resultado = subprocess.run(
+                comando,
+                check=True,
+                text=True,
+                capture_output=True,
+                env={**os.environ, "PGPASSWORD": password}  # passa a senha no env
+            )
             self.stdout.write('Importação concluída com sucesso.')
         except subprocess.CalledProcessError as e:
             self.stderr.write('Erro durante a importação:')
