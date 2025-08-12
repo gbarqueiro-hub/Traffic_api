@@ -169,3 +169,7 @@
 [INFO] 2025-08-12 16:24:04,209 middleware Request finished: GET /admin/traffic_api/passage/?road_segment__id__exact=1 - Status: 200 - Duration: 0.03s
 [INFO] 2025-08-12 16:24:04,231 middleware Request started: GET /admin/jsi18n/
 [INFO] 2025-08-12 16:24:04,241 middleware Request finished: GET /admin/jsi18n/ - Status: 200 - Duration: 0.01s
+[INFO] 2025-08-12 16:27:04,132 middleware Request started: GET /api/passages/car/
+[INFO] 2025-08-12 16:27:04,343 middleware Request finished: GET /api/passages/car/ - Status: 200 - Duration: 0.21s
+[INFO] 2025-08-12 16:27:21,940 middleware Request started: GET /api/passages/car/?license_plate=ABC1234
+[INFO] 2025-08-12 16:27:22,164 middleware Request finished: GET /api/passages/car/?license_plate=ABC1234 - Status: 200 - Duration: 0.22s
