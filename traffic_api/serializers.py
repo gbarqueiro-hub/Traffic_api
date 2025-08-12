@@ -14,22 +14,21 @@ class RoadSegmentSerializer(GeoFeatureModelSerializer):
         geo_field = 'geom'
         fields = ['id', 'geom', 'length', 'speed', 'readings_count', 'intensity']
 
+    @extend_schema_field(OpenApiTypes.INT)
     def get_readings_count(self, obj):
-        return obj.readings.count()
+        # Usa o valor anotado na query para evitar queries extras
+        return getattr(obj, 'readings_count', 0)
 
+    @extend_schema_field(OpenApiTypes.STR)
     def get_intensity(self, obj):
-        # Usar intensidade da última leitura, se existir
-        last_intensity = obj.last_intensity
-        if last_intensity is None:
+        if obj.speed is None:
             return "Desconhecida"
-        # Traduzir valores para exibir
-        mapping = {
-            'low': "Baixa",
-            'medium': "Média",
-            'high': "Elevada"
-        }
-        return mapping.get(last_intensity, "Desconhecida")
-
+        if obj.speed > 50:
+            return "Baixa"
+        elif 20 < obj.speed <= 50:
+            return "Média"
+        else:
+            return "Elevada"
 
 class TrafficReadingSerializer(serializers.ModelSerializer):
     intensity = serializers.SerializerMethodField()
