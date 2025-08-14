@@ -145,6 +145,11 @@ curl -X POST http://localhost:8000/passages/bulk_upload/ \
   -d '[{"road_segment":1,"car_license_plate":"ABC1234","timestamp":"2025-08-12T14:30:00Z","sensor_uuid":"270e4cc0-d454-4b42-8682-80e87c3d163c"}]'
 ```
 
+
+```
+curl -X POST http://localhost:8000/passages/bulk_upload/ -H "Content-Type: application/json" -H "X-API-KEY: 23231c7a-80a7-4810-93b3-98a18ecfbc42" -d "[{\"road_segment\":1,\"car_license_plate\":\"ABC1234\",\"timestamp\":\"2025-08-12T14:30:00Z\",\"sensor_uuid\":\"270e4cc0-d454-4b42-8682-80e87c3d163c\"},{\"road_segment\":2,\"car_license_plate\":\"DEF5678\",\"timestamp\":\"2025-08-12T15:00:00Z\",\"sensor_uuid\":\"a3e86bd0-c19f-44e9-84c0-eadf4d4da197\"},{\"road_segment\":3,\"car_license_plate\":\"GHI9012\",\"timestamp\":\"2025-08-12T15:30:00Z\",\"sensor_uuid\":\"e2937d9e-fb00-4a7e-969a-d7332d0e679b\"},{\"road_segment\":1,\"car_license_plate\":\"JKL3456\",\"timestamp\":\"2025-08-12T16:00:00Z\",\"sensor_uuid\":\"270e4cc0-d454-4b42-8682-80e87c3d163c\"}]"
+```
+
 Listar segmentos de estrada:
 ```bash
 curl -X GET http://localhost:8000/api/roadsegments/
